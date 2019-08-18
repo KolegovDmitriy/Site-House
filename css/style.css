@@ -1,0 +1,415 @@
+/*==========Весь html документ===== */
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /*background-color: #0db9eb;*/ 
+}
+
+.conteiner { 
+  width: 1280px;
+  margin: 0 auto;
+  min-height: 800px; 
+}
+
+/* ============Header=========== */
+
+.header {
+  margin:0 auto;
+  background-image: url('img/Header.jpg');
+  display: block;
+  width: 1280px;
+  height: 426px;
+  /*padding: 0px;*/
+  
+  background-size: cover; 
+}
+
+/*============= Лого ===========*/
+.logo {
+  margin-top: 15px; 
+  margin-left: 220px;
+  display:block;
+  float: left;
+  width: 70px;
+  height: 40px;
+  /*border: 3px solid green;*/
+}
+/*==============================*/
+/*======== Меню в header =======*/
+.menu { 
+  /*padding: 20px;*/
+  margin-top: 20px;
+  margin-left: 35px;
+  float: left;
+  display: inline-block;
+  /*border: 3px solid blue;*/
+  height: 25px;
+}
+
+.menu ul {
+  margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+  padding-left: 0; /*убираем левый отступ, равный 40px*/
+  list-style: none; /*убираем маркеры списка*/
+}
+
+.menu ul li {
+  border: 2px black;
+  width: 100px;
+  float: left;
+  line-height: 20px;
+  height: 17px;
+  /*margin: 2px;*/
+  text-align: center;
+  text-decoration: none;
+  border-left: 1px solid #ffffff;
+}
+
+.menu ul li:first-child{
+    border: none;
+}
+
+.menu a {
+  color: white; 
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #0db9eb;
+  /*text-shadow: 1px 1px black;*/
+}
+/*====================================*/
+
+/*=========== Телефон ================*/
+.tel a {
+  margin-top: 18px;
+  margin-left: 9px;
+  display: inline;
+  /*width: 200px;*/
+  /*height: 50px;    */
+  float: left;
+  font-size: 20px;
+  font-family: 'MyWebFont'; 
+  color: white; 
+  text-decoration: none;
+}
+
+.tel :link {
+  color: white; 
+}
+
+.tel :hover { 
+  color: #0db9eb;
+  /*text: 1px black;*/
+
+}
+
+.tel img {
+  margin-top: 18px;
+  margin-left:35px;
+  float: left;
+
+  width: 20px;
+  height: 20px;
+}
+/*====================*/
+
+/*=============== Слоган =============*/
+.name {  
+  float: right;
+  display: inline-block;
+  width: 500px;
+  height: 50px;
+  margin-top: 30px;
+  margin-right: 560px;
+  font-size: 45px;
+  font-family: 'MyWebFont';
+  color: white; 
+}
+
+.name h3 {
+  font-size: 25px;
+}
+
+.name h3:last-child {
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.name h1 {
+
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+
+.order {
+  margin-top: 130px;
+  margin-right: 900px;
+  float: right;
+  width: 160px;
+  height: 50px;
+  /*border: 1px solid black;*/
+  background-color: #7cbe04;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+}
+
+.order a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-decoration:none;
+  color: white;
+}
+
+.order :link {
+  color: orange;
+}
+
+.order :hover {
+  background-color: #6fa805;
+  border-radius: 5px;
+  color: #0db9eb; 
+}
+
+.order :active {
+  background-color: #a3f707;
+
+}
+
+
+
+
+
+
+/*====================================*/
+
+/*.header{ 
+  float: left;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  border-bottom: 2px solid #05694e;
+  background-color: #078c69; 
+}*/
+
+/*.header h3{ 
+  float: left;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 500px; 
+}*/
+
+/*======= Меню footer=========*/
+
+.button_nav {
+  /*float: left;*/
+  display:block;
+  width: 750px;
+  margin: 30px auto; 
+}
+
+
+.all_button_header {    
+  /*margin-top: 40px;*/
+  /*margin-left: 150px;*/
+  /*float: left;*/
+  /*display:block;*/
+  /*position: absolute;*/
+  /*margin-left: auto;*/
+  /*padding-left: 250px;*/
+  /*flex-direction: row;*/
+  /*justify-content: space-around;*/
+  /*margin: 20px auto;*/
+  font-weight: 500;
+  display: flex; 
+}
+
+.all_button_header li a {
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  cursor: pointer; 
+}
+
+.all_button_header li a:hover{ 
+  box-shadow: 0 0 5px 3px #ffffff;
+  font-weight: 900; 
+}
+
+.button {
+  text-align: center;
+  list-style: none;
+  line-height: 30px;
+  width: 150px;
+  height: 30px;
+  border-width: 0; 
+}
+
+.button1 {
+  background-color: #0096d6;
+  background-image: -webkit-linear-gradient(top, #0096d6, #008ac6);
+  background-image: -moz-linear-gradient(top, #0096d6, #008ac6);
+  background-image: linear-gradient(top, #0096d6, #008ac6); 
+}
+
+.button2 {
+    margin-left: 50px;
+    background-color: #00b274;
+    background-image: -webkit-linear-gradient(top, #00b274, #00a46b);
+    background-image: -moz-linear-gradient(top, #00b274, #00a46b);
+    background-image: linear-gradient(top, #00b274, #00a46b); 
+}
+
+.button3 {
+    margin-left: 50px;
+    background-color: #d75ba2;
+    background-image: -webkit-linear-gradient(top, #d75ba2, #c75496);
+    background-image: -moz-linear-gradient(top, #d75ba2, #c75496);
+    background-image: linear-gradient(top, #d75ba2, #c75496); 
+}
+
+.button4 {
+    margin-left: 50px;
+    background-color: #e9ac40;
+    background-image: -webkit-linear-gradient(top, #e9ac40, #d89f3b);
+    background-image: -moz-linear-gradient(top, #e9ac40, #d89f3b);
+    background-image: linear-gradient(top, #e9ac40, #d89f3b); 
+}
+
+.all_button_header li:hover {
+  /*width: 100%;*/
+  /*height: 30px;*/
+  /*box-shadow: 0 0 5px 2px;*/
+  /*background-color: #078c69;*/ 
+ }
+
+/*form{
+  display: inline-block; 
+}*/
+
+/*======= Конец меню footer=========*/
+
+/*=================== Начало блока main  ================ */
+
+.main {
+  width: 1280px;
+  min-height: 1000px;
+  float: left;
+  display:inline;
+  margin-left: 0 auto;
+  background-color: #eaeaea; 
+  /*background-color: #05c7fc;*/
+  padding-bottom: 20px;
+}
+
+.main h1 {
+  float: left;
+  margin-top: 20px; 
+  width: 1280px;
+  text-align: center;
+  font-size: 25px;
+  /*margin-left: auto;*/
+  /*text-indent: 200px;*/
+  /*margin-left: (100% - width)/2*/
+  /*margin-left: calc(50% - width/2)*/
+  /*height: 50px;*/
+  /*width: 800px;*/
+}
+
+.main h1:last-child {
+  /*display: float;*/
+  /*margin-top: 20px; */
+
+}
+
+.main pre {
+  /*text-indent: 100px;*/
+  margin-top: 20px;
+  float: left;
+  display: block;
+  margin-left: 220px;
+  width: 840px;
+  font-size: 20px;
+  white-space: pre-wrap;
+  text-indent: 0px;
+  /*min-height: 500px;*/
+  /*overflow: auto;*/
+  /*overflow-y: hidden;*/
+}
+
+.main p {
+/*text-indent: 100px;*/
+  margin-top: 20px;
+  float: left;
+  display: block;
+  margin-left: 220px;
+  width: 840px;
+  font-size: 20px;
+  /*white-space: pre-wrap;*/
+  text-indent: 0px;
+  /*min-height: 500px;*/
+  /*overflow: auto;*/
+  /*overflow-y: hidden;*/
+
+}
+
+
+
+.main ul {
+  float: left;
+  margin-top: 20px;
+  margin-left: 240px;
+  width: 760px;  
+  font-size: 20px;
+  /*list-style-image: url(..img/check2.png);*/
+  /*display: inline-block;*/
+  /*margin-top: 5px;*/
+}
+
+.main ul li {
+  /*list-style-type: none;*/
+  /*list-style-image: url(img/check01.png);*/
+  /*margin-top: 10px;*/
+  /*list-style-image: url(images/book.png);*/  
+  /*background: url("img/check2.png"); no-repeat; 0 4px; /* Параметры фона */
+  /*margin-bottom: 30px;*/
+  /*line-height: 50px;*/
+  /*padding-left: 24px;  Смещаем текст вправо  */
+}
+
+
+/*li:before{
+
+width: 16px;
+height: 16px;
+list-style-image: url(img/check01.png);
+/*background: url('path_to_icon.png');
+}*/
+/*==================== Конец блока main ================ */
+
+/*================== Начало блока footer ================*/
+
+.footer {
+  width: 1280px;
+  height: 250px;
+  float: left;
+  background-color: #63788d; 
+  /*display: block;  */
+  /*margin:0 auto;*/
+  /*padding: 0px; */
+  /*position: absolute;*/
+  /*left: 0;*/
+  /*bottom: 0px;*/
+}
+
+/*===================== Конец блока footer ===================*/

@@ -1,0 +1,203 @@
+/*=======Стили для странички контакты=====*/
+
+
+
+.contacts {
+    display: inline-block;
+    float: left;
+   
+    width: 400px;
+    height: 300px;
+    margin-top: 30px;
+    margin-left: 220px;
+    /*text-align: justify;*/
+    /*border: 3px solid red;*/
+    
+    font-size: 15px;
+    line-height: 25px;
+   
+}
+
+.contacts h1 {  
+    display: inline-block;
+    float: left; 
+    font: small-caps sans-serif;
+    margin-top: 5px;
+    /*text-align: center;*/
+    /*color: #007896;*/
+}
+
+.contacts p{
+     float: left;
+     margin: 0px 0px;
+     width: 380px;
+}
+
+.contacts table tr{
+    padding: 50px;
+}
+
+
+
+/*=========== Яндекс карта ===============*/
+
+iframe
+{
+    /*position: absolute;*/
+    /*top: 130px;*/
+    /*left: 650px;*/
+
+    display: inline-block;
+    float: left;
+    margin: 10px 220px;
+
+    border: 2px dashed #007896;
+}
+/*========== Конец блока яндекс карты ====*/
+
+/*====== форма отправки сообщения========*/
+.send
+{
+    display: inline-block;
+    float:left;
+    line-height: 30px;
+    width: 400px;
+    margin: 30px 5px;
+
+
+    /*top: 330px;*/
+    /*left: 220px;*/    
+    /*padding-bottom: 0;*/
+}
+
+/*#write h1{
+    display: block;
+    float: left;
+}*/
+
+fieldset
+{
+    font-size: 22px;
+
+    height: 360px;
+
+    color: #0e074f;
+    border: 2px dotted #007896;
+}
+
+fieldset h3
+{
+    font-size: 20px;
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: black;
+}
+.send h3
+{
+    margin-left: 20px;
+}
+
+.send input
+{
+    font-size: 20px;
+
+    padding: 4px;
+
+    border: 3px outset blue;
+    background-color: #aaf;
+}
+
+.send input:focus
+{
+    background: #04f;
+}
+
+.input_name
+{
+    width: 280px;
+    margin-left: 15px;
+
+    text-transform: capitalize;
+
+    border-radius: 0 10px 0 10px ;
+    outline: none;
+    outline: none;
+}
+
+input[type='e-mail']
+{
+    width: 278px;
+
+    border-radius: 0 10px 0 10px ;
+    outline: none;
+}
+
+.input_theme
+{
+    width: 360px;
+    margin-left: 10px;
+
+    border-radius: 0 10px 0 10px ;
+    outline: none;
+}
+
+
+.send textarea
+{
+    font-family: cursive;
+    font-size: 25px;
+    line-height: 30px;
+
+    width: 350px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+
+    resize: none;
+
+    border: 3px outset blue;
+    background-color: #aaf;
+}
+
+.send textarea:focus
+{
+    background: #04f;
+}
+
+input[type='submit']
+{
+    display: inline-block;
+
+    width: 180px;
+    margin-left: 10px;
+    padding: 4px;
+
+    background-color: #2272f5;
+}
+
+input[type='reset']
+{
+    display: inline-block;
+
+    width: 180px;
+    margin-left: 10px;
+    padding: 4px;
+
+    background-color: #2272f5;
+}
+
+
+/*изменение цвет placeholder
+input::-webkit-input-placeholder {
+color: blue !important;
+}
+*/
+
+
+/*===== Конец формы отправки сообщения==*/
+
+/*Конец блока контакты*/
